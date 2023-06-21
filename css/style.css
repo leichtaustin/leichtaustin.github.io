@@ -1,18 +1,26 @@
+* {
+    color: white;
+}
+
 header .container {
     display: flex;
     justify-content: end;
     padding: 5px 0px;
     background-color: azure;
+    background-color: black;
 }
 
 nav span {
     padding: 5px;
     text-decoration: none;
+    color: white;
 }
 
 h1 {
-    
-    color: blue;
+    text-align: left;
+}
+
+h2 {
     text-align: center;
 }
 
@@ -20,13 +28,27 @@ h1 {
     border: solid 1px black;
 }
 
+.about_container {
+    background-color: #101F6C;
+    background-image: repeating-linear-gradient(-26deg, rgba(255,255,255, 0.25),
+    rgba(255,255,255, 0.25) 2px, transparent 3px, transparent 7px);
+    padding: 10px;
+    background-size: 4px 4px;
+    /*Source for background textures: https://codepen.io/bitmap/pen/AzowBq*/
+}
+
 .pp_container {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    background-color: lightblue;
+    background-image: repeating-linear-gradient(-45deg, rgba(255,255,255, 0.25), rgba(255,255,255, 0.25) 1px, 
+    transparent 1px, transparent 6px);
 }
 
 .pp_indiv {
     border: solid 1px black;
     margin: 10px;
+    background-color: #101F6C;
+    min-width: 10rem;
 }
