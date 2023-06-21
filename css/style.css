@@ -3,3 +3,16 @@ h1 {
     color: blue;
     text-align: center;
 }
+
+.container {
+    border: solid 1px black;
+}
+
+.pp_container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.pp_indiv {
+    border: solid 1px black;
+}
