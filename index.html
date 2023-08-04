@@ -6,24 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Leicht Personal Page</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400&display=swap" rel="stylesheet">
 </head>
-<!-- <header>
-    <div class="container">
-        <nav class="navigation content">
-            <span><a href="#about">About Me</a></span>
-            <span>Projects</span>
-            <span>Contact</span>
-        </nav>
-    </div>
-</header> -->
 
 <body>
     <header>
         <div class="container">
             <nav class="navigation content">
-                <span><a href="#about">About Me</a></span>
-                <span>Projects</span>
-                <span>Contact</span>
+                <span><a href="#about">About</a></span>
+                <span><a href="#project_section">Projects</a></span>
+                <span><a>Contact</a></span>
             </nav>
         </div>
     </header>
@@ -31,50 +25,92 @@
     <div class="nameTitle">
         <div class="nameTitleContainer">
             <h1>Austin Leicht</h1>
-            <p>Software Engineer with a life long pursuit of learning new skills </br> 
-            and a passiong for problemn solving.</p>
+            <p>Software Engineer with a life long pursuit of learning new skills
+            and a passiong for problem solving.</p>
         </div>
     </div>
    
     <!-- About Section -->
-    <section class="about_section">
+    <div class="about_section">
         <div id="about" class="about_container container">
-            <h1>About Me</h1>
-            <p>Self-starter, problem solver, and enthusiastic about learning new skills and techniques about how to build tools and
-                solutions for users on a day to day basis.
-            </p>
+            <div class="title_headshot">
+                <h2>About Me</h2>
+                <img src="./assets/headshot_Leicht.JPG" alt="My Picture" style="
+                                width: 10%;
+                                border-radius: 15px;
+                                height: auto;
+                                display: block;
+                                margin-left: 20px;
+                                margin: auto;
+                                ">
+            </div>
+            <article>
+                <p>
+                    Hi, I'm Austin, a life-long learner with a passion for creating technology and solving 
+                    problems. I love building out ideas to make experiences better through 
+                    means of automation or more effective user experiences. I am located in the Denver, Colorado 
+                    metro area. 
+                    <br>
+                    <br>
+                    I have experience with JavaScript, ReaectJS, Redux, HTML/CSS, Git Version Control, 
+                    Agile Development, Scrum Planning and Execution, and more. 
+                    <br>
+                </p>
+                <details>
+                    <summary>
+                        <strong>Click for more info</strong>
+                    </summary>
+                    <p>
+                        My past experience as a Technical Program Manager for Meta and a United States Marine Corps
+                        Officer have provided me a strong foundation in working with teams to solve problems and accomplish
+                        goals. I am a software engineer with a deep understanding of how to dive to the root of the problem, 
+                        derive technical requirements from business needs, and put those requirements into a tangible and 
+                        executable solution. 
+                        <br>
+                        <br>
+                        I love coding and have a passion for software engineering because I am always amazed at what can be built
+                        via code. The industry continues to evolve and enable people to build more amazing things and find my 
+                        most fulfilling and enjoying moments when I have helped to build a truly amazing and beneficial product its users.
+                        <br>
+                        <br>
+                        If you would like to talk about code, the industry, what cool work you are pursuing or what I am up to feel free
+                        to connect with me on LinkedIn or reach out to me via a contact form below.
+                    </p>
+                </details>
+
+            </article>
         </div>
-    </section>
+    </div>
 
     <!-- Personal Projects Section -->
-    <section class="pp_section">
+    <div class="pp_section" id="project_section">
+        <h2>Portfolio Projects</h2>
         <div class="pp_container container">
             <div id="pp1" class="pp_indiv">
                 <h2>Project 1</h2>
+                <p>Description Text</p>
             </div>
             <div id="pp2" class="pp_indiv">
                 <h2>Project 2</h2>
+                <p>Description Text</p>
             </div>
             <div id="pp3" class="pp_indiv">
-                <h2>Project 3</h2>
-            </div>
-            <div id="pp4" class="pp_indiv">
-                <h2>Project 4</h2>
-            </div>
-            <div id="pp1" class="pp_indiv">
-                <h2>Project 1</h2>
-            </div>
-            <div id="pp2" class="pp_indiv">
-                <h2>Project 2</h2>
-            </div>
-            <div id="pp3" class="pp_indiv">
-                <h2>Project 3</h2>
-            </div>
-            <div id="pp4" class="pp_indiv">
-                <h2>Project 4</h2>
+                <h2>Find Your Hat Maze Game</h2>
+                <p>A React powered maze game used to exemplify the use of states and props in a react application. 
+                    The maze game enables the user to specify the attributes of the maze and then navigate their way 
+                    through the maze to find their prize.
+                    <br>
+                    <br>
+                    Technology Used: React, Javascript, HTML/CSS
+                </p>
+                <p>
+                    <a>Live Demo</a>
+                    |
+                    <a target="_blank" href="https://github.com/leichtaustin/maze-game">GitHub</a>
+                </p>
             </div>
         </div>
-    </section>
+    </div>
 
 
     
