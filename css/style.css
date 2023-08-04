@@ -1,13 +1,19 @@
 * {
     color: white;
+    text-align: center;
 }
+body {
+    background-image: url("../assets/site_background.jpg");
+    background-size: cover;
+}
+
+/* Header and Navigation Section */
 
 header .container {
     display: flex;
-    justify-content: end;
+    justify-content: center;
     padding: 5px 0px;
-    background-color: azure;
-    background-color: black;
+    background-color: hsla(0, 0%, 0%, .25)
 }
 
 nav span {
@@ -16,9 +22,21 @@ nav span {
     color: white;
 }
 
-h1 {
-    text-align: left;
+
+
+
+
+
+/* Main Name and Title Section */
+
+.nameTitle {
+    background-color: hsla(0, 0%, 0%, .25)
 }
+
+
+
+
+/* About Section */
 
 h2 {
     text-align: center;
@@ -29,26 +47,29 @@ h2 {
 }
 
 .about_container {
-    background-color: #101F6C;
-    background-image: repeating-linear-gradient(-26deg, rgba(255,255,255, 0.25),
-    rgba(255,255,255, 0.25) 2px, transparent 3px, transparent 7px);
     padding: 10px;
     background-size: 4px 4px;
     /*Source for background textures: https://codepen.io/bitmap/pen/AzowBq*/
+    background-color: hsla(0, 0%, 0%, .25)
 }
+
+
+
+
+
+/* Projects Section */
 
 .pp_container {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    background-color: lightblue;
-    background-image: repeating-linear-gradient(-45deg, rgba(255,255,255, 0.25), rgba(255,255,255, 0.25) 1px, 
-    transparent 1px, transparent 6px);
+    background-color: hsla(0, 0%, 0%, .25);
+
 }
 
 .pp_indiv {
     border: solid 1px black;
     margin: 10px;
-    background-color: #101F6C;
+    background-color: hsla(0, 0%, 0%, .5);
     min-width: 10rem;
 }
