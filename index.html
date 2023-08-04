@@ -17,7 +17,7 @@
             <nav class="navigation content">
                 <span><a href="#about">About</a></span>
                 <span><a href="#project_section">Projects</a></span>
-                <span><a>Contact</a></span>
+                <span><a href="#contact_section">Contact</a></span>
             </nav>
         </div>
     </header>
@@ -27,6 +27,11 @@
             <h1>Austin Leicht</h1>
             <p>Software Engineer with a life long pursuit of learning new skills
             and a passiong for problem solving.</p>
+            <p>
+                <a href="https://www.linkedin.com/in/austin-leicht/">LinkedIn</a>
+                |
+                <a>Resume</a>
+            </p>
         </div>
     </div>
    
@@ -35,8 +40,9 @@
         <div id="about" class="about_container container">
             <div class="title_headshot">
                 <h2>About Me</h2>
-                <img src="./assets/headshot_Leicht.JPG" alt="My Picture" style="
-                                width: 10%;
+                <img id="headshot" src="./assets/headshot_Leicht.JPG" alt="My Picture" style="
+                                width: 30%;
+                                max-width: 100px;
                                 border-radius: 15px;
                                 height: auto;
                                 display: block;
@@ -110,6 +116,46 @@
                 </p>
             </div>
         </div>
+    </div>
+
+    <!--Contact Section-->
+    <div class="contact_section" id="contact_section">
+        <h2>Contact Me</h2>
+        <form
+            action="https://formspree.io/f/xknloedp"
+            method="POST"
+            class="contact_form"
+        >
+        <div class="form_fields">
+            <div class="upper_half">
+                <div class="form_half">
+                    <label>
+                        Name:
+                    <input type="text" name="name" style="color: white;">
+                    </label>
+                </div>
+                <div class="form_half">   
+                    <label>
+                        Email:
+                    <input type="email" name="email" style="color: white;">
+                    </label>
+                </div>
+            </div>
+            <div class="field lower_half">
+                <div>
+                    <label>
+                        Message:
+                    </label>
+                </div>
+                <div>
+                    <textarea name="message" style="color: white;" rows="4"></textarea>
+                </div>
+            </div>
+  <!-- your other form fields go here -->
+            <button type="submit" style="color: black">Send Message</button>
+        </div>
+
+        </form>
     </div>
 
 
