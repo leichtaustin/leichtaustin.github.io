@@ -9,37 +9,52 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"
+    >
 </head>
 
 <body>
     <header>
-        <div class="container">
-            <nav class="navigation content">
-                <span><a href="#about">About</a></span>
-                <span><a href="#project_section">Projects</a></span>
-                <span><a href="#contact_section">Contact</a></span>
-            </nav>
-        </div>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <!-- <a class="navbar-brand" href="#">Navbar</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button> -->
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class= "nav-link active" aria-current="page" href="#about">About Me</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        References
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class= "nav-link active" aria-current="page" href="https://www.linkedin.com/in/austin-leicht/">LinkedIn</a></li>
+                      <li><a class= "nav-link active" aria-current="page" href="#project_section">Projects</a></li>
+                      <!-- <li><hr class="dropdown-divider"></li> -->
+                      <li><a class= "nav-link active" aria-current="page" href="./assets/Leicht_SWE_Resume_2023.pdf">Resume</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <h1>Austin Leicht Portfolio</h1>
+            </div>
+          </nav>
     </header>
     <!--Home Section-->
-    <div class="nameTitle">
-        <div class="nameTitleContainer">
-            <h1>Austin Leicht</h1>
-            <p>Software Engineer with a life long pursuit of learning new skills
-            and a passiong for problem solving.</p>
-            <p>
-                <a href="https://www.linkedin.com/in/austin-leicht/">LinkedIn</a>
-                |
-                <a href="./assets/Leicht_SWE_Resume_2023.pdf">Resume</a>
-            </p>
-        </div>
-    </div>
+
    
     <!-- About Section -->
-    <div class="about_section">
-        <div id="about" class="about_container container">
+    <div class="shadow-sm p-3 mb-5 rounded about_section">
+        <div id="about" class="shadow-sm p-3 mb-5 bg-body-tertiary rounded about_container container">
             <div class="title_headshot">
-                <h2>About Me</h2>
+                <h2> About Me</h2>
                 <img id="headshot" src="./assets/headshot_Leicht.JPG" alt="My Picture" style="
                                 width: 30%;
                                 max-width: 100px;
@@ -88,11 +103,13 @@
         </div>
     </div>
 
+    <div class="breakLine"></div>
+
     <!-- Personal Projects Section -->
-    <div class="pp_section" id="project_section">
+    <div class="shadow-sm p-3 mb-5 rounded pp_section" id="project_section">
         <h2>Portfolio Projects</h2>
         <div class="pp_container container">
-            <div id="pp1" class="pp_indiv">
+            <div id="pp1" class="shadow-sm p-3 mb-5 bg-body-tertiary rounded pp_indiv">
                 <h2>Backyard Baseball Team Auction Application</h2>
                 <p>Ecommerce style application designed for users to create their fravorite backyard baseball team with auction style drafting. 
                     <br>
@@ -105,7 +122,7 @@
                     <a target="_blank" href="https://github.com/leichtaustin/eCommerce-baseball">GitHub</a>
                 </p>
             </div>
-            <div id="pp2" class="pp_indiv">
+            <div id="pp2" class=" shadow-sm p-3 mb-5 bg-body-tertiary rounded pp_indiv">
                 <h2>Movie Finder Application</h2>
                 <p>Application leveraging the OMDB public API to search for user's favorite movies and display each movie's information. 
                     <br>
@@ -118,7 +135,7 @@
                     <a target="_blank" href="https://github.com/leichtaustin/movieFinder">GitHub</a>
                 </p>
             </div>
-            <div id="pp3" class="pp_indiv">
+            <div id="pp3" class=" shadow-sm p-3 mb-5 bg-body-tertiary rounded pp_indiv">
                 <h2>Find Your Hat - Maze Generator</h2>
                 <p>A React powered maze game used to exemplify the use of states and props in a react application. 
                     The maze game enables the user to specify the attributes of the maze and then navigate their way 
@@ -136,6 +153,8 @@
         </div>
     </div>
 
+    <div class="breakLine"></div>
+    
     <!--Contact Section-->
     <div class="contact_section" id="contact_section">
         <h2>Contact Me</h2>
@@ -149,13 +168,13 @@
                 <div class="form_half">
                     <label>
                         Name:
-                    <input type="text" name="name" style="color: white;">
+                    <input type="text" name="name" style="color: black;">
                     </label>
                 </div>
                 <div class="form_half">   
                     <label>
                         Email:
-                    <input type="email" name="email" style="color: white;">
+                    <input type="email" name="email" style="color: black;">
                     </label>
                 </div>
             </div>
@@ -166,7 +185,7 @@
                     </label>
                 </div>
                 <div>
-                    <textarea name="message" style="color: white;" rows="4"></textarea>
+                    <textarea name="message" style="color: black;" rows="4"></textarea>
                 </div>
             </div>
   <!-- your other form fields go here -->
@@ -177,6 +196,7 @@
     </div>
 
 
-    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
 </body>
 </html>
